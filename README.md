@@ -31,6 +31,7 @@ meta name="viewport" content="width=device‑width, initial‑scale=1.0">
   
   <section id="projects">
     <h2>Featured Projects</h2>  
+    
     <div class="project">
       <h3>AI Chatbot</h3>
       <p>Fine-tuned LLMs for Q&A using knowledge graphs and summarization, improving accuracy and reducing irrelevant responses.</p>
