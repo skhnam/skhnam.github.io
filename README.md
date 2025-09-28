@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <header>
     <h1>Safeena Khanam</h1>
@@ -60,6 +59,4 @@
     <p>© 2025 Safeena Khanam. All rights reserved.</p>
     <p>Hosted on GitHub Pages — Theme by orderedlist</p>
   </footer>
-
-</body>
 </html>
