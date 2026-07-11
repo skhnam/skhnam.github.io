@@ -1,4 +1,4 @@
-Readme github profile fancy · MD<!-- Animated wave banner -->
+<!-- Animated wave banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:3fb950,100:58d6ff&height=180&section=header&text=Safeena%20Khanam&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Cloud%20%C2%B7%20DevOps%20%C2%B7%20Applied%20AI&descAlignY=55&descSize=18" width="100%"/>
 <!-- Animated typing line -->
 <p align="center">
@@ -18,12 +18,12 @@ Readme github profile fancy · MD<!-- Animated wave banner -->
 👩‍💻 About me
 
 
-☁️ Software engineer who likes building systems that stay up — fault-tolerant AWS architectures, IaC, and CI/CD pipelines
-📡 Started in telecom networking (FTTH & 5G backbone) — learned to think in failure domains before writing my first Terraform file
+☁️ Software engineer who likes building systems that **stay up** — fault-tolerant AWS architectures, IaC, and CI/CD pipelines
+📡 Started in telecom networking (FTTH & 5G backbone) learned to think in failure domains before writing my first Terraform file
 🤖 Published RAG / LLM research at ASEE-NE — 40% fewer irrelevant responses through retrieval filtering
 🖥️ Built dashboards giving visibility into 800+ production servers at NJ Transit
 🎓 M.Tech Computer Science, University of Bridgeport (Dec 2025)
-💬 Ask me about: Terraform, AWS, CI/CD, monitoring, RAG pipelines
+💬 Ask me about: AWS, CI/CD, monitoring, RAG pipelines, Terraform
 
 
 <br clear="right"/>
@@ -69,7 +69,7 @@ ProjectStack🤖RAG-Powered Conversational AI — published at ASEE-NE; 40% fewe
 </p>
 
 <p align="center">
-  <i>⚡ "Done is better than perfect — but automated is better than done."</i>
+  <i>⚡ "Done is better than perfect but automated is better than done."</i>
 </p>
 <!-- Footer wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58d6ff,50:3fb950,100:0d1117&height=120&section=footer" width="100%"/>
