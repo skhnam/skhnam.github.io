@@ -1,5 +1,5 @@
 
-# Hi, I'm Safeena 👋
+# Hi there👋
 
 <img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="230"/>
 
@@ -11,7 +11,7 @@ building RAG pipelines and LLM-backed applications with real-world constraints i
 I started in telecom networking (FTTH & 5G backbone design), which taught me to
 think in failure domains before I ever wrote a Terraform file.
 
-🔗 **Portfolio:** [skhnam.github.io](https://skhnam.github.io) · **LinkedIn:** [safeena-khanam](https://www.linkedin.com/in/safeena-khanam)
+🔗 **Portfolio:** [skhnam.github.io](https://skhnam.github.io) · **LinkedIn:** [safeena-khanam](https://www.linkedin.com/in/safeena-khanam-a641a6203/)
 
 ---
 
