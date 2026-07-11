@@ -1,63 +1,93 @@
+# 🌐 Safeena Khanam — Portfolio (CI/CD Deployed)
 
-# Hi there👋
+> Personal portfolio site, deployed to **GitHub Pages** through a **GitHub Actions** pipeline — zero hosting costs, fully automated.
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="230"/>
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=github&logoColor=white)
 
-I'm a software engineer who likes building systems that **stay up** —
-cloud-native backends, fault-tolerant AWS architectures, and CI/CD pipelines
-that ship code without drama. Lately I've been pairing that with applied AI,
-building RAG pipelines and LLM-backed applications with real-world constraints in mind.
-
-I started in telecom networking (FTTH & 5G backbone design), which taught me to
-think in failure domains before I ever wrote a Terraform file.
-
-🔗 **Portfolio:** [skhnam.github.io](https://skhnam.github.io) · **LinkedIn:** [safeena-khanam](https://www.linkedin.com/in/safeena-khanam-a641a6203/)
+**🔗 Live site:** https://skhnam.github.io
 
 ---
 
-### What I enjoy working on
+## 🎯 Problem Statement
 
-- Automating infrastructure with Terraform & Ansible so deploys are boring (the good kind)
-- Designing fault-tolerant AWS architectures — Multi-AZ, auto scaling, DR with real RTO/RPO targets
-- Building CI/CD pipelines that validate before they ship
-- Making systems observable — dashboards, alerts, and logs that tell you *why*, not just *that*
+Resumes get scanned, not studied. I wanted a portfolio that:
 
-### What I'm exploring more deeply
+- Proves my DevOps skills *by how it's built*, not just what it says
+- Costs $0 to host and maintain
+- Ships automatically on every `git push` — no manual deploy steps, ever
 
-- Kubernetes patterns for production — GitOps with ArgoCD, Helm-based deploys
-- Bringing AI into operations: RAG pipelines, LLM-backed tooling, intelligent alerting
-- DevSecOps — secret management, least-privilege IAM, security as a pipeline stage
+So the portfolio itself is a small CI/CD project: push to `main` → pipeline validates the HTML → deploys to GitHub Pages.
 
----
+## 🛠️ Tech Stack
 
-### Things I've built
+- **Site:** Single-file HTML/CSS/vanilla JS (no framework, no build step — fast and dependency-free)
+- **CI/CD:** GitHub Actions (`.github/workflows/deploy.yml`)
+- **Hosting:** GitHub Pages (free, HTTPS included)
 
-☁️ **Cloud Infrastructure & Dashboards**
-Backend services and internal dashboards giving visibility into 800+ production servers, with Multi-AZ fault tolerance and automated DR/backup strategies. *(NJ Transit)*
+## ✨ Features
 
-⚙️ **Infrastructure-as-Code Pipelines**
-Terraform + Ansible provisioning with CI/CD automation that cut release times and reduced downtime by 25% through proactive health checks. *(ITOrizon)*
+- 🚀 **Automated deployment** — push to `main` triggers validate → deploy
+- ✅ **CI validation step** — HTML linting + section integrity checks before deploy
+- 🖥️ **Terminal-themed dark UI** with typing animation and scroll reveals
+- 📱 **Fully responsive** — works on mobile, tablet, desktop
+- 🔒 **HTTPS by default** via GitHub Pages
 
-🤖 **RAG-Powered Conversational AI** *(published at ASEE-NE)*
-End-to-end retrieval-augmented generation with vector search and memory layers — 40% fewer irrelevant responses, 90% relevance improvement through tuning.
+## ⚙️ CI/CD Flow
 
-📡 **Software-Driven Network Design**
-FTTH & 5G backbone systems supporting 10 Gbps infrastructure, with GIS-integrated data workflows. *(Cyient)*
+```
+git push origin main
+   │
+   ▼
+GitHub Actions triggered
+   │
+   ├─ Job 1: validate  → lint HTML (tidy) + check all sections exist
+   │
+   └─ Job 2: deploy    → upload artifact → deploy to GitHub Pages
+                         └─ live at skhnam.github.io ✅
+```
 
----
+## 🚀 How to Run Locally
 
-### Tech I work with
+```bash
+git clone https://github.com/skhnam/skhnam.github.io.git
+cd skhnam.github.io
 
-**Cloud:** AWS (EC2, S3, RDS, EKS, ECS, Lambda, Route53, CloudWatch)
-**IaC & Config:** Terraform, Ansible, Puppet, ArgoCD
-**CI/CD:** GitHub Actions, Jenkins, GitLab CI, AWS CodePipeline
-**Containers:** Docker, Kubernetes, EKS
-**Observability:** Grafana, Splunk, Datadog, Dynatrace, CloudWatch
-**AI:** LangChain, Hugging Face, PyTorch, Transformers, RAG
-**Code & Data:** Python, Shell, PostgreSQL, MySQL, MongoDB, Redis
+# no build step needed — just open it
+start index.html       # Windows
+open index.html        # macOS
 
----
+# or serve it properly
+python3 -m http.server 8000   # → http://localhost:8000
+```
 
-![Safeena's GitHub stats](https://github-readme-stats.vercel.app/api?username=skhnam&show_icons=true&theme=github_dark&hide_border=true)
+## 📁 Folder Structure
 
-📫 Reach me: **khanamsafeena5@gmail.com**
+```
+.
+├── index.html                  # the entire site (HTML + CSS + JS)
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # CI/CD pipeline: validate → deploy
+└── README.md
+```
+
+## 📚 Learnings / Challenges
+
+- **GitHub Pages deployment models:** chose the Actions-based deploy (`actions/deploy-pages`) over the classic branch-based deploy so I could add a validation gate before anything goes live — the same pattern as production pipelines.
+- **Keeping it single-file:** resisting a framework kept the site at ~0 dependencies, instant load, and nothing to break in CI.
+- **Concurrency control:** added a `concurrency` group so rapid pushes cancel stale deploys instead of racing each other.
+
+## 👩‍💻 About Me
+
+Software Engineer (4 yrs) — cloud-native architecture, DevOps automation, and applied AI (RAG pipelines).
+AWS · Terraform · Kubernetes · GitHub Actions · Python.
+
+## 📫 Contact
+
+- **LinkedIn:** [safeena-khanam](https://www.linkedin.com/in/safeena-khanam)
+- **Email:** khanamsafeena97@gmail.com
+- **Portfolio:** https://skhnam.github.io
